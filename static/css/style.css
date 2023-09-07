@@ -1,0 +1,372 @@
+/* Importing the Open Sans font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* Styling for the class .btn */
+.btn {
+  /* The element will be displayed as an inline-level block container */
+  display: inline-block;
+
+  /* Padding is the space between the content and the border, values are for top, right, bottom, left respectively */
+  padding: 4px 10px 4px;
+
+  /* Margin-bottom is the space below the element */
+  margin-bottom: 0;
+
+  /* Font-size is the size of the text */
+  font-size: 13px;
+
+  /* Line-height is the distance between lines */
+  line-height: 18px;
+
+  /* Color is the color of the text */
+  color: #333333;
+
+  /* Text-align is the horizontal alignment of the text */
+  text-align: center;
+
+  /* Text-shadow is the shadow behind the text, values are for horizontal shadow, vertical shadow, blur distance, and color of shadow */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+
+  /* Vertical-align is the vertical alignment of the element */
+  vertical-align: middle;
+
+  /* Background-color is the color behind the content of the box */
+  background-color: #f5f5f5;
+
+  /* Background-image is the image to use as the background of the element, here it's a linear gradient from white to #e6e6e6 */
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+
+  /* Background-repeat specifies if/how a background image is repeated */
+  background-repeat: repeat-x;
+
+  /* Filter is a special effect like blur or changing color intensity */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0);
+
+  /* Border-color is the color of the border */
+  border-color: #e6e6e6 #e6e6e6 #e6e6e6;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+  /* Border is the border around the element, values are for border width, border style, and border color */
+  border: 1px solid #e6e6e6;
+
+  /* Border-radius is the rounding of the border corners */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+
+  /* Box-shadow is the shadow behind the box, values are for horizontal shadow, vertical shadow, blur distance, spread distance, and color of shadow */
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+  /* Cursor is the type of cursor to display for the mouse pointer */
+  cursor: pointer;
+
+  /* Margin-left is the space to the left of the element */
+  margin-left: .3em;
+}
+
+/* Styling for the .btn class when hovered, active, active class is added, disabled or disabled attribute is added */
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  /* Changes the background color */
+  background-color: #e6e6e6;
+}
+
+/* Styling for the .btn-large class */
+.btn-large {
+  /* Changes the padding and font-size */
+  padding: 9px 14px;
+  font-size: 15px;
+
+  /* Sets the line-height to normal */
+  line-height: normal;
+
+  /* Changes the border-radius */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Styling for the .btn class when hovered */
+.btn:hover {
+  /* Changes the color, removes text-decoration, changes background color and position */
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+
+  /* Adds a transition effect to the background-position */
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+
+/* Styling for the .btn-primary class and .btn-primary class when hovered */
+.btn-primary,
+.btn-primary:hover {
+  /* Changes the text-shadow and color */
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+/* Styling for the .btn-primary class */
+.btn-primary {
+  /* Sets the background color of the button */
+  background-color: #4a77d4;
+
+  /* Sets a linear gradient as the background image, starting from #6eb6de at the top to #4a77d4 at the bottom */
+  /* The gradient is specified for different browser support */
+  background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4);
+  background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4));
+  background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4);
+  background-image: -o-linear-gradient(top, #6eb6de, #4a77d4);
+  background-image: linear-gradient(top, #6eb6de, #4a77d4);
+
+  /* The background image is repeated along the x-axis */
+  background-repeat: repeat-x;
+
+  /* Applies a gradient filter for Internet Explorer 6-9 */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);
+
+  /* Sets the border of the button to 1px solid and color to #3762bc */
+  border: 1px solid #3762bc;
+
+  /* Applies a text shadow to the button text */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+  /* Applies a box shadow to the button */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the .btn-primary class when hovered, active, active class is added, disabled or disabled attribute is added */
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  /* Removes any filter applied */
+  filter: none;
+
+  /* Changes the background color to #4a77d4 */
+  background-color: #4a77d4;
+}
+
+/* Styling for the .btn-reset class and .btn-reset class when hovered */
+.btn-reset,
+.btn-reset:hover {
+  /* Changes the text-shadow and color */
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+/* Styling for the .btn-reset class */
+.btn-reset {
+  /* Sets the background color of the button */
+  background-color: #B22222;
+
+  /* Sets a linear gradient as the background image, starting from #FF6347 at the top to #B22222 at the bottom */
+  /* The gradient is specified for different browser support */
+  background-image: -moz-linear-gradient(top, #FF6347, #B22222);
+  background-image: -ms-linear-gradient(top, #FF6347, #B22222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FF6347), to(#B22222));
+  background-image: -webkit-linear-gradient(top, #FF6347, #B22222);
+  background-image: -o-linear-gradient(top, #FF6347, #B22222);
+  background-image: linear-gradient(top, #FF6347, #B22222);
+
+  /* The background image is repeated along the x-axis */
+  background-repeat: repeat-x;
+
+  /* Applies a gradient filter for Internet Explorer 6-9 */
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr=#FF6347, endColorstr=#B22222, GradientType=0);
+
+  /* Sets the border of the button to 1px solid and color to #8B1A1A */
+  border: 1px solid #8B1A1A;
+
+  /* Applies a text shadow to the button text */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+  /* Applies a box shadow to the button */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the .btn-reset class when hovered, active, active class is added, disabled or disabled attribute is added */
+.btn-reset:hover,
+.btn-reset:active,
+.btn-reset.active,
+.btn-reset.disabled,
+.btn-reset[disabled] {
+  /* Removes any filter applied */
+  filter: none;
+
+  /* Changes the background color to #B22222 */
+  background-color: #B22222;
+}
+
+
+/* Styling for the .btn-block class */
+.btn-block {
+  /* Changes the width and display */
+  width: 100%;
+  display: block;
+}
+
+/* Styling for the html element */
+html {
+  /* Sets the width of the html element to 100% of the viewport width */
+  width: 100%;
+
+  /* Sets the height of the html element to 100% of the viewport height */
+  height: 100%;
+
+  /* Hides the overflow content, i.e., the content that overflows the html element's box */
+  overflow: hidden;
+}
+
+/* Styling for the body element */
+body {
+  /* Sets the width of the body element to 100% of the viewport width */
+  width: 100%;
+
+  /* Sets the height of the body element to 100% of the viewport height */
+  height: 100%;
+
+  /* Sets the font family of the text in the body element to 'Open Sans', if 'Open Sans' is not available, a sans-serif font will be used */
+  font-family: 'Open Sans', sans-serif;
+
+  /* Sets the background color of the body element to #092756 */
+  background: #092756;
+
+  /* Sets the color of the text in the body element to white (#fff) */
+  color: #fff;
+
+  /* Sets the font size of the text in the body element to 18px */
+  font-size: 18px;
+
+  /* Centers the text in the body element */
+  text-align: center;
+
+  /* Increases the space between characters in the text in the body element by 1.2px */
+  letter-spacing: 1.2px;
+
+  /* Sets multiple background images for the body element, including radial and linear gradients */
+  /* The gradients are specified for different browser support */
+
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -webkit-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -o-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -o-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -ms-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), linear-gradient(135deg, #670d10 0%, #092756 100%);
+
+  /* Applies a gradient filter for Internet Explorer 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3E1D6D', endColorstr='#092756', GradientType=1);
+}
+
+/* Styling for the .login class */
+.login {
+  /* Positions the element in an absolute position, i.e., relative to the nearest positioned ancestor */
+  position: absolute;
+
+  /* Positions the element 40% from the top of its containing element */
+  top: 40%;
+
+  /* Positions the element 50% from the left of its containing element */
+  left: 50%;
+
+  /* Offsets the element's position by -150px from the top and -150px from the left, effectively centering the element */
+  margin: -150px 0 0 -150px;
+
+  /* Sets the width of the element to 400px */
+  width: 400px;
+
+  /* Sets the height of the element to 400px */
+  height: 400px;
+}
+
+/* Styling for the h1 element inside the .login class */
+.login h1 {
+  /* Sets the color of the text to white (#fff) */
+  color: #fff;
+
+  /* Applies a shadow to the text */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  /* Increases the space between characters in the text by 1px */
+  letter-spacing: 1px;
+
+  /* Centers the text */
+  text-align: center;
+}
+
+
+input:focus {
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Common styles for #title and #para */
+.user_input {
+  /* Sets the width of the element to 100% of its containing element */
+  width: 100%;
+
+  /* Allows the user to resize the element vertically */
+  resize: vertical;
+
+  /* Sets the color of the text to white (#ffffff) */
+  color: #ffffff;
+
+  /* Sets the background color of the element to a semi-transparent black (rgba(0, 0, 0, 0.3)) */
+  background: rgba(0, 0, 0, 0.3);
+
+  /* Removes the border of the element */
+  border: none;
+
+  /* Removes the outline of the element */
+  outline: none;
+
+  /* Adds 10px of padding to the element */
+  padding: 10px;
+
+  /* Sets the font size of the text to 13px */
+  font-size: 13px;
+
+  /* Applies a shadow to the text */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+  /* Sets the border of the element to 1px solid and color to a semi-transparent black (rgba(0, 0, 0, 0.3)) */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  /* Rounds the corners of the element's border */
+  border-radius: 4px;
+
+  /* Applies a shadow to the element */
+  box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+
+  /* Adds a transition effect to the box-shadow property, taking 0.5s to change, with an easing function */
+  -webkit-transition: box-shadow .5s ease;
+  -moz-transition: box-shadow .5s ease;
+  -o-transition: box-shadow .5s ease;
+  -ms-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+}
+
+/* Specific style for #title */
+#title {
+  height: 80px;
+}
+
+/* Specific style for #para */
+#para {
+  height: 120px;
+}

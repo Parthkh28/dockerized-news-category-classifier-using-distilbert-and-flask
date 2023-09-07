@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static/css/style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+ <div class="login">
+  <h1>Predict News Category</h1>
+
+  <!-- Main Input For Receiving Query to our ML -->
+  <form id="myForm" action="{{ url_for('predict')}}" method="post">
+    <textarea name="Title" id="title" class="user_input" placeholder="Title" required="required"></textarea>
+    <textarea name="Paragraph" id="para" class="user_input" placeholder="Paragraph" required="required"></textarea>
+
+    <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    <button type="reset" class="btn btn-block btn-reset btn-large">Reset</button>
+  </form>
+
+  <br>
+  <br>
+  <div id="prediction">{{ prediction_text }}</div>
+
+ </div>
+
+ <script>
+  // The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // Check if there is any saved 'title' data in localStorage
+    if(localStorage.getItem('title')) {
+      // If there is, set the value of the 'title' input field to the saved data
+      document.getElementById('title').value = localStorage.getItem('title');
+    }
+    
+    // Check if there is any saved 'para' data in localStorage
+    if(localStorage.getItem('para')) {
+      // If there is, set the value of the 'para' input field to the saved data
+      document.getElementById('para').value = localStorage.getItem('para');
+    }
+
+    // Add an event listener for the 'submit' event on the form with id 'myForm'
+    document.getElementById('myForm').addEventListener('submit', function() {
+      // On form submit, save the value of the 'title' input field in localStorage
+      localStorage.setItem('title', document.getElementById('title').value);
+      // Also save the value of the 'para' input field in localStorage
+      localStorage.setItem('para', document.getElementById('para').value);
+    });
+
+    // Add an event listener for the 'reset' event on the form with id 'myForm'
+    document.getElementById('myForm').addEventListener('reset', function() {
+      // On form reset, remove the saved 'title' data from localStorage
+      localStorage.removeItem('title');
+      // Also remove the saved 'para' data from localStorage
+      localStorage.removeItem('para');
+      // Clear the text content of the element with id 'prediction'
+      document.getElementById('prediction').textContent = '';
+    });
+  });
+</script>
+
+</body>
+</html>
+
+

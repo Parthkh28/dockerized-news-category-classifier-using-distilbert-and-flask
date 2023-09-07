@@ -1,0 +1,10 @@
+pandas==1.4.2
+numpy==1.22.4
+tensorflow==2.10.0
+transformers==4.32.0
+sklearn==0.0
+nltk==3.8.1
+seaborn==0.12.1
+matplotlib==3.6.2
+tensorflow-addons== 0.21.0
+Flask==2.3.2
