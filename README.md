@@ -14,6 +14,10 @@
 ├── saved_model                >Stores the best_model
 └── requirements.txt           > Stores the information about all the libraries, modules, and packages in itself that are used while developing the project
 ```
+
+##### Link to Kaggle Notebook
+https://www.kaggle.com/code/parthkharbanda/distilbert-news-classification-70-accuracy
+
 ## Project Overview
 NewsBERT is a comprehensive application that classifies news articles into different categories based on their headlines and short descriptions. The project leverages a fine-tuned DistilBert model for the classification task, a Flask application for the frontend (rendering HTML) and backend, and Docker for deployment.
 
