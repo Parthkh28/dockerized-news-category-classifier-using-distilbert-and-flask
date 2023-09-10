@@ -17,15 +17,6 @@
 ## Project Overview
 NewsBERT is a comprehensive application that classifies news articles into different categories based on their headlines and short descriptions. The project leverages a fine-tuned DistilBert model for the classification task, a Flask application for the frontend (rendering HTML) and backend, and Docker for deployment.
 
-
-
-
-
-
-
-
-
-
 ## Dataset and Preprocessing
 The dataset used for this project is sourced from Kaggle. It contains approximately 210k+ news headlines from HuffPost, spanning from 2012 to 2022. The dataset includes the following columns: link, headline, category, short_description, authors, and date.
 
@@ -60,5 +51,25 @@ The Flask application serves as the backbone of this project, providing both fro
 
 - Backend: The backend of the application handles URL routing. When a user enters a title and headline, the Flask application routes the request to the appropriate function. The backend also includes a function for making predictions using the saved DistilBert model.
 
+This Flask app allows users to submit input requests either through an API or a web application form.
 ## Docker Deployment
 The application and associated files are containerized using Docker, which ensures that it runs consistently across different environments. Docker packages up the application with all of the parts it needs, including the libraries and other dependencies, and ships it all out as one package.
+### Build Docker Image
+You can build the docker image manually by cloning the Git repo.
+```
+$ git clone https://github.com/Parthkh28/DataScience.git
+$ docker build -t news_classification .
+```
+### Download Precreated Image
+Alternatively, you can download the existing image from DockerHub.
+```
+$ docker pull parthkh28/news_classification
+```
+### Run the Container
+Create a container from the image.
+```
+$ docker run --name my-container  -d -p 8000:8000 news_classification
+```
+In the above example, we are running a docker container with the name my-container in detached mode and mapping port 8000 of the host to port 8000 of the container. The image we are using is news_classification.
+
+Now visit http://localhost:8000 to interact with the application.
